@@ -71,7 +71,6 @@ export default function Header() {
         <span
           style={{
             fontSize: 12,
-            color: "var(--text3)",
             background: "var(--yellow-light)",
             color: "var(--yellow)",
             padding: "3px 10px",

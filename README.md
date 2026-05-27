@@ -1,4 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SQLD.zip — SQLD 자격증 문제은행 · 모의고사
+
+SQLD(SQL Developer) 시험 대비 웹 서비스. 문제 풀이부터 Claude AI 해설까지 한 곳에서.
+
+## 주요 기능
+
+| 기능 | 설명 |
+|------|------|
+| 📚 문제은행 | 단원별 문제 풀기, 즉시 정오 확인, 상세 해설 |
+| 🖥️ 모의고사 | 40문항 / 50분 CBT 모드, 타이머, 플래그, 성적표 |
+| 📝 오답노트 | 틀린 문제 자동 저장, 재풀기 |
+| ✨ AI 해설 | Claude API 스트리밍으로 문제별 맞춤 해설 |
+
+## 시험 범위
+
+- **1과목** — 데이터 모델링의 이해 (16문항)
+- **2과목** — SQL 기본 및 활용 (24문항)
+
+## 기술 스택
+
+- **Next.js 15** (App Router, TypeScript)
+- **Tailwind CSS**
+- **Zustand** (오답노트·북마크 상태 관리, localStorage 영속)
+- **Anthropic Claude API** (claude-sonnet-4-6, 스트리밍 해설)
+- **AlaSQL** (브라우저 내 SQL 실습, 예정)
+
+## 로컬 실행
+
+```bash
+npm install
+cp .env.local.example .env.local  # API 키 입력
+npm run dev
+```
+
+`http://localhost:3000` 에서 확인.
+
+## 환경 변수
+
+```
+ANTHROPIC_API_KEY=sk-ant-...
+```
+
+---
 
 ## Getting Started
 

@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+:root {
+  --bg: #f8f9fb;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --text: #111827;
+  --text2: #6b7280;
+  --text3: #9ca3af;
+  --primary: #1a5276;
+  --primary-light: #dbeafe;
+  --green: #166534;
+  --green-light: #dcfce7;
+  --red: #991b1b;
+  --red-light: #fee2e2;
+  --yellow: #92400e;
+  --yellow-light: #fef9c3;
+  --orange: #c2410c;
+  --orange-light: #ffedd5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* 코드 블록 */
+pre, code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
